@@ -149,11 +149,21 @@ export function Footer() {
         <div className="pt-8 border-t border-slate-800/80 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© {currentYear} Ram Gopal Constructions. All Rights Reserved.</p>
 
-          <p className="text-slate-300 text-center flex flex-wrap items-center justify-center gap-1.5 font-medium bg-slate-800/60 px-4 py-2 rounded-full border border-slate-700/60">
+          <p className="text-slate-400 text-center flex flex-wrap items-center justify-center gap-1.5 font-medium">
             <span>Built & Developed by</span>
-            <span className="text-[#F4B400] font-bold">Emviq Studios</span>
+            <a
+              href="https://emviqdesigns.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#F4B400] font-bold hover:underline transition-all"
+            >
+              Emviq Studios
+            </a>
             <span className="text-slate-600 hidden sm:inline">•</span>
-            <a href="mailto:emviq.designs@gmail.com" className="text-slate-300 hover:text-[#F4B400] transition-colors underline decoration-slate-600 underline-offset-2">
+            <a
+              href="mailto:emviq.designs@gmail.com"
+              className="text-slate-300 hover:text-[#F4B400] transition-colors underline decoration-slate-600 underline-offset-2"
+            >
               emviq.designs@gmail.com
             </a>
           </p>
