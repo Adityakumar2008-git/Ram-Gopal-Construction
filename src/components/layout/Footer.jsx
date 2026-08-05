@@ -145,11 +145,21 @@ export function Footer() {
 
         </div>
 
-        {/* Bottom Copyright & Disclaimer */}
-        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        {/* Bottom Copyright, Credits & Disclaimer */}
+        <div className="pt-8 border-t border-slate-800/80 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© {currentYear} Ram Gopal Constructions. All Rights Reserved.</p>
-          <p className="text-slate-400 text-center md:text-right">
-            Construction • Interior • Marble & Tile • Property Consultation | Faridabad, Haryana
+
+          <p className="text-slate-300 text-center flex flex-wrap items-center justify-center gap-1.5 font-medium bg-slate-800/60 px-4 py-2 rounded-full border border-slate-700/60">
+            <span>Built & Developed by</span>
+            <span className="text-[#F4B400] font-bold">Emviq Studios</span>
+            <span className="text-slate-600 hidden sm:inline">•</span>
+            <a href="mailto:emviq.designs@gmail.com" className="text-slate-300 hover:text-[#F4B400] transition-colors underline decoration-slate-600 underline-offset-2">
+              emviq.designs@gmail.com
+            </a>
+          </p>
+
+          <p className="text-slate-400 text-center lg:text-right">
+            Construction • Interior • Marble & Tile • Property | Faridabad, HR
           </p>
         </div>
 
