@@ -122,7 +122,7 @@ export function ContactForm() {
         data.append('_gotcha', formData.gotcha);
       }
 
-      const response = await fetch('https://formspree.io/f/mkjwnnbn', {
+      const response = await fetch('https://formspree.io/f/xppadyga', {
         method: 'POST',
         body: data,
         headers: {
