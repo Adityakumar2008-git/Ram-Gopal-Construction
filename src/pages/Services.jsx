@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import { SEO } from '../components/common/SEO';
 import { PageHeader } from '../components/layout/PageHeader';
 import { SERVICES_DATA } from '../data/servicesData';
 import { ContactForm } from '../components/sections/ContactForm';
@@ -11,8 +12,6 @@ export function Services() {
   const location = useLocation();
 
   useEffect(() => {
-    document.title = "Our Services | Ram Gopal Constructions - Construction, Interior, Marble & Property Solutions";
-    
     // Handle anchor scrolling
     if (location.hash) {
       const id = location.hash.replace('#', '');
@@ -33,7 +32,14 @@ export function Services() {
 
   return (
     <main className="bg-white">
+      <SEO
+        title="Our Services | Ram Gopal Constructions - Construction, Interior, Marble & Property Solutions"
+        description="Comprehensive construction and property services in Faridabad & Delhi NCR: Residential Construction, Commercial Building, Demolition, Modular Interiors, Marble & Tile Fitting, and Property Consultation."
+        path="/services"
+        keywords="Residential Construction Faridabad, Commercial Construction NCR, Demolition Services Faridabad, Modular Kitchen Designer, Italian Marble Flooring, Tile Installation, Property Consultation Faridabad"
+      />
       <PageHeader
+
         title="Our Services"
         subtitle="End-to-end construction, renovation, modular interior design, marble & tile installation, and property consultation across Delhi NCR."
         breadcrumb={[{ name: 'Services' }]}

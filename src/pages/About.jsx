@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+import React from 'react';
+import { SEO } from '../components/common/SEO';
 import { PageHeader } from '../components/layout/PageHeader';
 import { SectionHeading } from '../components/ui/SectionHeading';
 import { WhyChooseUs } from '../components/sections/WhyChooseUs';
@@ -7,10 +8,6 @@ import { ShieldCheck, Target, Eye, Award, CheckCircle2, MapPin, UserCheck, Quote
 import { COMPANY_INFO } from '../constants/companyInfo';
 
 export function About() {
-  useEffect(() => {
-    document.title = "About Us | Ram Gopal Constructions - Construction & Property Solutions in Delhi NCR";
-  }, []);
-
   const serviceAreas = [
     "Faridabad (Sector 15, Sector 16, Green Fields, Greater Faridabad, Lakkadpur)",
     "Gurugram (Golf Course Road, Sohna Road, DLF Phases)",
@@ -21,6 +18,13 @@ export function About() {
 
   return (
     <main className="bg-white">
+      <SEO
+        title="About Us | Ram Gopal Constructions - Construction & Property Solutions in Delhi NCR"
+        description="Learn about Ram Gopal Constructions, directed by Ankit Pal. Serving Faridabad and Delhi NCR with quality residential & commercial house construction, marble work, and property consultation."
+        path="/about"
+        keywords="About Ram Gopal Constructions, Ankit Pal Director, Construction Company Faridabad, Civil Contractor Faridabad, Quality House Builders Delhi NCR"
+      />
+
       <PageHeader
         title="About Ram Gopal Constructions"
         subtitle="Delivering reliable construction, interior design, marble work, and property solutions across Delhi NCR."

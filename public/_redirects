@@ -1,1 +1,8 @@
+# Netlify Domain Redirects (301 Permanent Redirect for SEO ranking)
+https://ramgopalconstructions.netlify.app/*  https://ramgopalconstructions.in/:splat  301!
+https://www.ramgopalconstructions.in/*     https://ramgopalconstructions.in/:splat  301!
+https://ramgopalconstructions.com/*          https://ramgopalconstructions.in/:splat  301!
+https://www.ramgopalconstructions.com/*     https://ramgopalconstructions.in/:splat  301!
+
+# Single Page Application (SPA) Client Routing
 /*    /index.html   200

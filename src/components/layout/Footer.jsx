@@ -26,6 +26,21 @@ export function Footer() {
     { name: 'Property Services', path: '/services#property-services' },
   ];
 
+  const seoSearchKeywords = [
+    "Best Construction Company",
+    "Best Construction Company Near Me",
+    "Construction Company Near Me",
+    "Ram Gopal Constructions",
+    "Construction Company in Faridabad",
+    "House Construction Contractor Delhi NCR",
+    "Interior Designer in Faridabad",
+    "Home Renovation Services",
+    "Marble Contractor Near Me",
+    "Tile Fitting Contractor",
+    "Property Consultant Faridabad",
+    "Building Construction India"
+  ];
+
   return (
     <footer className="bg-[#1F2937] text-slate-300 pt-16 pb-8 border-t-4 border-[#F4B400]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -48,13 +63,13 @@ export function Footer() {
             </Link>
             
             <p className="text-slate-400 text-sm leading-relaxed">
-              Premier construction and property solutions company based in Faridabad, serving clients across Delhi NCR with quality engineering, modern interiors, and transparent property services.
+              Ram Gopal Constructions is rated the best construction company in Faridabad & Delhi NCR, offering turnkey house construction, commercial building, home renovation, interior design, Italian marble polishing, and property consultation.
             </p>
 
             <div className="pt-2 flex items-center gap-3">
-              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Service Focus:</span>
+              <span className="text-xs font-semibold text-slate-400 uppercase tracking-wider">Service Coverage:</span>
               <span className="text-xs bg-slate-800 text-[#F4B400] px-2.5 py-1 rounded-md border border-slate-700 font-medium">
-                Delhi NCR
+                Faridabad & Delhi NCR (India)
               </span>
             </div>
           </div>
@@ -145,8 +160,20 @@ export function Footer() {
 
         </div>
 
-        {/* Bottom Copyright, Credits & Disclaimer */}
-        <div className="pt-8 border-t border-slate-800/80 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-slate-400">
+        {/* SEO Search Keyword Hub */}
+        <div className="py-6 border-b border-slate-800/80 text-xs text-slate-400">
+          <p className="font-bold text-white mb-2 uppercase tracking-wider text-[11px]">Popular Searches & Services Across India & Delhi NCR:</p>
+          <div className="flex flex-wrap gap-2">
+            {seoSearchKeywords.map((kw, i) => (
+              <span key={i} className="bg-slate-800/80 text-slate-300 px-2.5 py-1 rounded-md border border-slate-700/60 hover:border-[#F4B400]/40 transition-colors">
+                {kw}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Bottom Copyright & Credits */}
+        <div className="pt-6 flex flex-col lg:flex-row items-center justify-between gap-4 text-xs text-slate-400">
           <p>© {currentYear} Ram Gopal Constructions. All Rights Reserved.</p>
 
           <p className="text-slate-400 text-center flex flex-wrap items-center justify-center gap-1.5 font-medium">
@@ -169,7 +196,7 @@ export function Footer() {
           </p>
 
           <p className="text-slate-400 text-center lg:text-right">
-            Construction • Interior • Marble & Tile • Property | Faridabad, HR
+            Best Construction Company • Faridabad • Delhi NCR • India
           </p>
         </div>
 

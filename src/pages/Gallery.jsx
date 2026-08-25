@@ -1,6 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Maximize2, Tag } from 'lucide-react';
+import { SEO } from '../components/common/SEO';
 import { PageHeader } from '../components/layout/PageHeader';
 import { Modal } from '../components/ui/Modal';
 import { ContactForm } from '../components/sections/ContactForm';
@@ -8,11 +9,6 @@ import { ContactForm } from '../components/sections/ContactForm';
 export function Gallery() {
   const [activeFilter, setActiveFilter] = useState('All');
   const [selectedImage, setSelectedImage] = useState(null);
-
-  useEffect(() => {
-    document.title = "Photo Gallery | Ram Gopal Constructions - On-Site Construction & Interior Work";
-    window.scrollTo(0, 0);
-  }, []);
 
   const galleryItems = [
     {
@@ -79,6 +75,13 @@ export function Gallery() {
 
   return (
     <main className="bg-white">
+      <SEO
+        title="Photo Gallery | Ram Gopal Constructions - On-Site Construction & Interior Work"
+        description="Visual gallery of real building construction sites, marble laying, false ceilings, modular kitchens, and completed structural projects by Ram Gopal Constructions in Delhi NCR."
+        path="/gallery"
+        keywords="Construction Photos Faridabad, Marble Work Images, Interior Design Gallery, Site Masonry Photos, Villa Build Gallery"
+      />
+
       <PageHeader
         title="Work Photo Gallery"
         subtitle="Visual showcase of real construction site work, marble fittings, false ceiling artwork, and completed builds."

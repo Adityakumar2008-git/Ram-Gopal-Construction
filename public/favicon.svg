@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.12"/>
+    </filter>
+  </defs>
+
+  <!-- Clean App Icon Squircle Background -->
+  <rect width="512" height="512" rx="110" fill="#FFFFFF" filter="url(#shadow)"/>
+  <rect x="4" y="4" width="504" height="504" rx="106" fill="none" stroke="#E2E8F0" stroke-width="4"/>
+
+  <!-- Logo Mark Graphic -->
+  <g transform="translate(15, -10)">
+    <!-- Orange Roof Peak Lines -->
+    <!-- Top outer roof slash -->
+    <path d="M 120 220 L 230 110 L 290 170" fill="none" stroke="#D96B27" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Inner roof & left vertical pillar -->
+    <path d="M 122 260 L 230 152" fill="none" stroke="#D96B27" stroke-width="20" stroke-linecap="round"/>
+    <path d="M 160 270 L 160 380 L 220 380" fill="none" stroke="#D96B27" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <!-- Navy "RG" Monogram -->
+    <g fill="#0F243E">
+      <!-- Letter R -->
+      <path d="M 230 200 L 230 380 L 265 380 L 265 315 L 300 315 L 340 380 L 385 380 L 338 308 C 365 298 380 278 380 252 C 380 218 355 200 310 200 Z M 265 235 L 305 235 C 328 235 342 242 342 256 C 342 272 328 280 305 280 L 265 280 Z"/>
+      
+      <!-- Letter G -->
+      <path d="M 470 240 C 452 212 422 196 385 196 C 330 196 288 238 288 290 C 288 345 332 384 390 384 C 445 384 480 350 482 300 L 395 300 L 395 335 L 444 335 C 438 350 418 358 392 358 C 352 358 325 328 325 290 C 325 252 352 222 390 222 C 414 222 432 232 445 248 Z" transform="translate(10, 0)"/>
+    </g>
+  </g>
+</svg>

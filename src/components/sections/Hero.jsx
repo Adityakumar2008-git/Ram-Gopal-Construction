@@ -27,7 +27,10 @@ export function Hero() {
 
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-between overflow-hidden bg-slate-900 hero-container">
-      {/* Crisp, Bright Hero Background Image (No Dark Overlay Tint) */}
+      {/* Hidden eager image for LCP browser preload optimization */}
+      <img src="/hero-bg.png" alt="Ram Gopal Constructions Hero Background" fetchpriority="high" loading="eager" className="hidden" />
+
+      {/* Crisp, Bright Hero Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700"
         style={{ backgroundImage: `url('/hero-bg.png')` }}
@@ -35,6 +38,7 @@ export function Hero() {
       
       {/* Light subtle gradient ONLY behind text on the left for maximum readability */}
       <div className="absolute inset-y-0 left-0 w-full lg:w-2/3 bg-gradient-to-r from-slate-950/75 via-slate-950/45 to-transparent pointer-events-none" />
+
 
       {/* Main Hero Content Area */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 sm:pt-24 pb-12 w-full flex-1 flex flex-col justify-center">
