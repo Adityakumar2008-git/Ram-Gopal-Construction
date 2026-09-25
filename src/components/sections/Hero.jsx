@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ArrowRight, Play, HardHat, Building2, Users, Home, MapPin } from 'lucide-react';
+import { ArrowRight, Play, Building2, Users, Home, MapPin } from 'lucide-react';
 
 export function Hero() {
   const scrollToContact = () => {
@@ -22,7 +22,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-[92vh] lg:min-h-screen flex flex-col justify-between overflow-hidden bg-[#070D18]">
+    <section className="relative min-h-[84vh] lg:min-h-[88vh] flex flex-col justify-between overflow-hidden bg-[#070D18]">
       {/* High-priority browser image preload */}
       <img
         src="/hero-sunset-bg.jpg"
@@ -72,7 +72,7 @@ export function Hero() {
       </div>
 
       {/* Top HUD Row (Coordinates & Service Taxonomy on Desktop) */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 sm:pt-10 w-full flex justify-end">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8 w-full flex justify-end">
         <motion.div
           initial={{ opacity: 0, y: -15 }}
           animate={{ opacity: 1, y: 0 }}
@@ -101,8 +101,8 @@ export function Hero() {
       </div>
 
       {/* Main Hero Content Area */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16 w-full flex-1 flex flex-col justify-center">
-        <div className="max-w-2xl lg:max-w-3xl space-y-6 sm:space-y-7">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 sm:pt-6 pb-4 sm:pb-6 w-full flex-1 flex flex-col justify-center">
+        <div className="max-w-2xl lg:max-w-3xl space-y-5 sm:space-y-6">
           
           {/* Eyebrow Badge */}
           <motion.div
@@ -122,7 +122,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-[76px] xl:text-[84px] font-black leading-[1.05] tracking-tight"
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-[74px] xl:text-[80px] font-black leading-[1.06] tracking-tight"
           >
             <span className="block text-white drop-shadow-md">
               Building Trust.
@@ -147,7 +147,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap items-center gap-4 pt-2"
+            className="flex flex-wrap items-center gap-4 pt-1"
           >
             {/* Primary Button */}
             <button
@@ -170,43 +170,16 @@ export function Hero() {
             </button>
           </motion.div>
 
-          {/* Floating Experience / Trust Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.35 }}
-            className="pt-2"
-          >
-            <motion.div
-              animate={{ y: [0, -4, 0] }}
-              transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
-              className="inline-flex items-center gap-4 px-5 py-3.5 rounded-2xl bg-slate-950/70 border border-white/10 backdrop-blur-md shadow-2xl shadow-black/70 hover:border-[#F4B400]/40 transition-colors"
-            >
-              <div className="w-11 h-11 rounded-xl bg-amber-400/10 border border-[#F4B400]/30 flex items-center justify-center text-[#F4B400] shrink-0">
-                <HardHat className="w-6 h-6 stroke-[1.8]" />
-              </div>
-              <div className="h-8 w-[1px] bg-white/15" />
-              <div>
-                <div className="text-2xl sm:text-3xl font-black text-white leading-none tracking-tight">
-                  25+
-                </div>
-                <div className="text-[11px] sm:text-xs font-medium text-slate-400 pt-1 tracking-wide">
-                  Years of Excellence
-                </div>
-              </div>
-            </motion.div>
-          </motion.div>
-
         </div>
       </div>
 
-      {/* Premium Bottom Statistics Bar */}
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 w-full pb-10 sm:pb-12 lg:pb-14">
+      {/* Premium Bottom Statistics Bar (Moved upwards directly under content) */}
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 w-full pt-3 pb-8 sm:pb-10 lg:pb-12">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 25 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
-          className="relative rounded-3xl bg-slate-950/80 backdrop-blur-xl border border-white/15 p-5 sm:p-7 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.85)] overflow-hidden"
+          transition={{ duration: 0.7, delay: 0.35 }}
+          className="relative rounded-3xl bg-slate-950/80 backdrop-blur-xl border border-white/15 p-5 sm:p-6 lg:p-7 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.85)] overflow-hidden"
         >
           {/* Subtle Top Gold Highlight Glow */}
           <div className="absolute inset-x-12 top-0 h-[2px] bg-gradient-to-r from-transparent via-[#F4B400] to-transparent opacity-80" />
