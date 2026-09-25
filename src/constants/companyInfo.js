@@ -16,7 +16,7 @@ export const COMPANY_INFO = {
     secondaryPhone: "+91 76784 11181",
     whatsapp: "917678411181",
     whatsappDisplay: "+91 76784 11181",
-    email: "Ankitpal1311@gamil.com"
+    email: "Ankitpal1311@gmail.com"
   },
   hours: "Monday - Sunday: 9:00 AM - 7:00 PM",
   social: {

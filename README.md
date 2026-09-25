@@ -90,7 +90,7 @@ Make sure you have [Node.js](https://nodejs.org/) (v18+) installed.
 
 - **Founder & Director**: Ankit Pal
 - **Phone / WhatsApp**: [+91 76784 11181](tel:7678411181)
-- **Email**: [Ankitpal1311@gamil.com](mailto:Ankitpal1311@gamil.com)
+- **Email**: [Ankitpal1311@gmail.com](mailto:Ankitpal1311@gmail.com)
 - **Headquarters**: D-5/132, Shiv Durga Vihar, Lakkadpur, Faridabad, Haryana - 121009
 - **Working Hours**: Monday - Sunday: 9:00 AM - 7:00 PM
 
